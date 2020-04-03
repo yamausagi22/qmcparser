@@ -52,9 +52,3 @@ class QmcParser(object):
         decode_buf = self._decode_bytes(in_)
         with open(out_, 'wb') as fout:
             fout.write(decode_buf)
-
-
-if __name__ == '__main__':
-    p = QmcParser()
-    p.parse('DJ OKAWARI - Flower Dance [mqms2].qmc0', 'out1.mp3')
-    p.parse('胡夏&郁可唯 - 知否知否 [mqms2].qmc0', 'out2.mp3')
